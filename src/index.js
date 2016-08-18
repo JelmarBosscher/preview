@@ -15,6 +15,7 @@ import {footerComponent} from './app/components/startup/su-footer/footer';
 
 import {suParticipantsComponent} from './app/components/startup/su-participants/suParticipants';
 
+// main scss
 import './index.scss';
 
 angular

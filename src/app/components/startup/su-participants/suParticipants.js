@@ -1,6 +1,16 @@
 class SuParticipantsController {
-  constructor() {
-    this.text = 'My brand new component!';
+  constructor($http) {
+
+  	let $this = this;
+
+    this.text = 'Startup participants';
+
+    $http
+		.get('app/components/startup/su-participants/participants.json')
+		.then(response => {
+			$this.participants = response.data;
+			console.log($this.participants);
+		});
   }
 }
 

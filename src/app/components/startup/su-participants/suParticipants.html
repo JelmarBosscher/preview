@@ -1,3 +1,10 @@
-<div class="component">
+<div class="su-participants">
   <h2>{{$ctrl.text}}</h2>
+
+  <ul>
+  	<li ng-repeat="participant in $ctrl.participants">
+		<h3>{{participant.name}}</h3>
+		<small>{{participant.company.name}}</small>
+  	</li>
+  </ul>
 </div>

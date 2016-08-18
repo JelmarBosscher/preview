@@ -1,11 +1,8 @@
-
-
+/* Core and default styles */
 @import 'app/styles/base';
 
-@import 'app/modules/startup-vr/index';
+/* Config */
+@import 'config';
 
-@import 'app/components/startup/su-header/header';
-@import 'app/components/startup/su-footer/footer';
-@import 'app/components/startup/su-title/title';
-
-@import 'app/components/startup/su-participants/suParticipants';
+/* Imported modules and components */
+@import 'modules';

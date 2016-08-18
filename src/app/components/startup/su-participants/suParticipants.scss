@@ -1,0 +1,32 @@
+.su-participants {
+	padding: 2em;
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+
+		box-sizing: border-box;
+
+		list-style-type: none;
+		margin: 0 0 0 -1em;
+		padding: 0;
+
+		li {
+			min-width: 20%;
+			display: block;
+			margin: 1em 1em 0 0;
+			padding: 1em;
+			transition: $transition-duration;
+
+			&:hover {
+				background-color: $primary-color;
+				color: $light-color;
+			}
+		}
+
+		h3 {
+			margin: 0;
+		}
+	}
+}
