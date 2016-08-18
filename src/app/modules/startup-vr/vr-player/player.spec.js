@@ -1,13 +1,14 @@
+
 import angular from 'angular';
 import 'angular-mocks';
-import {tech} from './tech';
+import {player} from './player';
 
-describe('tech component', () => {
+describe('player component', () => {
   beforeEach(() => {
     angular
-      .module('fountainTech', ['app/techs/tech.html'])
-      .component('fountainTech', tech);
-    angular.mock.module('fountainTech');
+      .module('fountainplayer', ['app/players/player.html'])
+      .component('fountainplayer', player);
+    angular.mock.module('fountainplayer');
   });
 
   it('should render Gulp', angular.mock.inject(($rootScope, $compile) => {
@@ -19,9 +20,9 @@ describe('tech component', () => {
       text1: 'The streaming build system',
       text2: 'Automate and enhance your workflow'
     };
-    const element = $compile('<fountain-tech tech="fixture"></fountain-tech>')($scope);
+    const element = $compile('<fountain-player player="fixture"></fountain-player>')($scope);
     $scope.$digest();
-    const tech = element.find('h3');
-    expect(tech.html().trim()).toEqual('Gulp');
+    const player = element.find('h3');
+    expect(player.html().trim()).toEqual('Gulp');
   }));
 });

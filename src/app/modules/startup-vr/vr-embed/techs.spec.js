@@ -1,8 +1,8 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {techs} from './techs';
+import {embed} from './embed';
 
-const techsJson = [
+const embedJson = [
   {
     key: 'gulp',
     title: 'Gulp',
@@ -26,19 +26,19 @@ const techsJson = [
   }
 ];
 
-describe('techs component', () => {
+describe('embed component', () => {
   beforeEach(() => {
     angular
-      .module('fountainTechs', ['app/techs/techs.html'])
-      .component('fountainTechs', techs);
-    angular.mock.module('fountainTechs');
+      .module('fountainembed', ['app/embed/embed.html'])
+      .component('fountainembed', embed);
+    angular.mock.module('fountainembed');
   });
   it('should render 3 elements <fountain-tech>', angular.mock.inject(($rootScope, $compile, $httpBackend) => {
-    $httpBackend.when('GET', 'app/techs/techs.json').respond(techsJson);
-    const element = $compile('<fountain-techs></fountain-techs>')($rootScope);
+    $httpBackend.when('GET', 'app/embed/embed.json').respond(embedJson);
+    const element = $compile('<fountain-embed></fountain-embed>')($rootScope);
     $httpBackend.flush();
     $rootScope.$digest();
-    const techs = element.find('fountain-tech');
-    expect(techs.length).toEqual(3);
+    const embed = element.find('fountain-tech');
+    expect(embed.length).toEqual(3);
   }));
 });
