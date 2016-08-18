@@ -10,10 +10,10 @@ body, h1, h2, h3 {
 }
 
 a {
-  color: white;
+  color: $primary-color;
   text-decoration: none;
 
   &:hover {
-    color: green;
+    color: $dark-color;
   }
 }

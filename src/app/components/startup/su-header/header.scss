@@ -1,18 +1,20 @@
+
 .header {
   display: flex;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: $light-color;
 
 	.header-title {
 	  flex: 1;
 	  font-size: 1.5rem;
 	  margin: 1rem;
+	  color: $primary-color;
 	}
 
 	.header-date {
 	  flex: 1;
 	  text-align: right;
 	  margin: 1rem;
-	  color: white;
+	  color: $primary-color;
 	}
 }

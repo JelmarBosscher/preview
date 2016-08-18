@@ -1,5 +1,3 @@
-import './suParticipants.scss';
-
 class SuParticipantsController {
   constructor() {
     this.text = 'My brand new component!';
