@@ -3,7 +3,7 @@ class SuParticipantsController {
 
   	let $this = this;
 
-    this.text = 'Startup participants';
+    this.text = 'Startup participants - get call, JSON example';
 
     $http
 		.get('app/components/startup/su-participants/participants.json')

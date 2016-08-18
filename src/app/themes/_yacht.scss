@@ -1,2 +1,17 @@
 // tinqwise theme
-$primary-color:       	navy;
+
+// Colors
+$primary-color:       	navy !default;
+$dark-color:          	#666666 !default;
+$light-color:         	#ffffff !default;
+
+// Transitions
+$transition-duration: 	.2s !default;
+
+// Settings 
+$border-radius: 		4px !default;
+
+// Buttons
+$button-border-radius: 	$border-radius !default;
+$button-border:			2px solid $primary-color !default;
+$button-padding:		.5em 1.5em !default;

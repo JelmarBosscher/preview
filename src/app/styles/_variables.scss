@@ -1,10 +1,18 @@
 // Colors
 $primary-color:       	red !default;
-$dark-color:          	#222222;
-$light-color:         	#fefefe;
+$dark-color:          	#222222 !default;
+$light-color:         	#fefefe !default;
 
 // Transitions
-$transition-duration: 	.5s;
+$transition-duration: 	.5s !default;
 
 // Settings 
-$border-radius: 		4px;
+$border-radius: 		4px !default;
+
+// Buttons
+$button-border-radius: 	$border-radius !default;
+$button-border:			none !default;
+$button-padding:		.5em 1.5em !default;
+
+// Button styles
+$button-round-radius:	50px !default;

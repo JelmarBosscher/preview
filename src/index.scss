@@ -1,8 +1,8 @@
+/* Config (Theme variables, etc)*/
+@import 'config';
+
 /* Core and default styles */
 @import 'app/styles/base';
-
-/* Config */
-@import 'config';
 
 /* Imported modules and components */
 @import 'modules';

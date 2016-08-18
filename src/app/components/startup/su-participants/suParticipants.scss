@@ -17,6 +17,7 @@
 			display: block;
 			margin: 1em 1em 0 0;
 			padding: 1em;
+			border-radius: $border-radius;
 			transition: $transition-duration;
 
 			&:hover {

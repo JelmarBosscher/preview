@@ -1,7 +1,37 @@
 <div class="title">
   <h1 class="title-h1">Proof of concept</h1>
-  <div>
-
-  </div>
-  <h2 class="title-h2">Startup Theming</h2>
+  <h2 class="title-h2">Startup</h2>
 </div>
+
+<div class="theme">
+	<h3> Theming example </h3>
+	<button class="btn-primary btn-{{$ctrl.primary}} btn-{{$ctrl.style}}" type="button">
+		button {{$ctrl.primary}} {{$ctrl.style}}
+	</button>
+	<button class="btn-secondary btn-{{$ctrl.secondary}} btn-{{$ctrl.style}}" type="button">
+		button {{$ctrl.secondary}} {{$ctrl.style}}
+	</button>
+
+	<div class="theme-controls">
+		<div>
+			<label>Primary:</label>
+			<button class="btn-primary btn-purple" ng-click="$ctrl.primary = 'purple'">Purple</button> 
+			<button class="btn-primary btn-tomato" ng-click="$ctrl.primary = 'tomato'">Tomato</button>
+			<button class="btn-primary btn-green" ng-click="$ctrl.primary = 'green'">Green</button>
+		</div>
+	  	<div>
+		  	<label>Secondary:</label>
+			<button class="btn-secondary btn-purple" ng-click="$ctrl.secondary = 'purple'">Purple</button> 
+			<button class="btn-secondary btn-tomato" ng-click="$ctrl.secondary = 'tomato'">Tomato</button>
+			<button class="btn-secondary btn-green" ng-click="$ctrl.secondary = 'green'">Green</button>
+		</div>
+	  	<div>
+		  	<label>Style:</label>
+			<button class="btn-style btn-skewed" ng-click="$ctrl.style = 'skewed'">Skewed</button> 
+			<button class="btn-style btn-round" ng-click="$ctrl.style = 'round'">Round</button>
+			<button class="btn-style btn-square" ng-click="$ctrl.style = 'square'">Square</button>
+	  	</div>
+	</div>
+</div>
+
+<hr />

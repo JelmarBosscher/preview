@@ -1,0 +1,37 @@
+button {
+	border: $button-border;
+	background-color: $primary-color;
+	color: $light-color; 
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+	transition: $transition-duration;
+
+	&:hover {
+		opacity: .9;
+	}
+
+	&.btn-secondary {
+		background-color: $light-color;
+		color: $primary-color;
+		border: 2px solid $primary-color;
+	}
+}
+
+/* Setting colors the lazy way */
+.btn-primary {
+	&.btn-tomato {	background-color: tomato; }
+	&.btn-green {	background-color: green; }
+	&.btn-purple {		background-color: purple; }
+}
+
+.btn-secondary {
+	&.btn-tomato {	color: tomato; 	border-color: tomato}
+	&.btn-green {	color: green; 	border-color: green}
+	&.btn-purple {		color: purple; 	border-color: purple}
+}
+
+.btn-round { 	border-radius: $button-round-radius }
+.btn-square { 	border-radius: 0 }
+.btn-skewed { 	
+	transform: skew(5deg,-3deg) rotate3d(1, 1, 1, 10deg);
+}
